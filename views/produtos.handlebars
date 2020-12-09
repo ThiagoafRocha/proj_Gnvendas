@@ -1,0 +1,16 @@
+<table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{ #each products }}
+            <tr>
+                <td>{{ nome }}</td>
+                <td>{{ valor }}</td>
+            </tr>
+            {{ /each }}
+        </tbody>
+</table>

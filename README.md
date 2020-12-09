@@ -1,2 +1,2 @@
-# proj_Gnvendas
-Projeto voltado para tentativa de vaga na empresa Gerencianet
+# proj-Gnvendas
+Projeto proposto como desafio para vaga na empresa Gerencianet
