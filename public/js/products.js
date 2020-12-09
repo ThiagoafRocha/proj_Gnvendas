@@ -43,7 +43,7 @@ async function handleBoleto(id) {
         chargeId
     });
 
-    //window.location.href = pdfCharge;
+    window.location.href = pdfCharge;
 
 }
 
@@ -61,9 +61,3 @@ resultado.then(response => {
         id_button += 1;
     })
 })
-
-//function retornaDataHoraAtual(){
-//  var dNow = new Date();
-//  var localdate = dNow.getDate() + "/" + (dNow.getMonth()+1) + "/" + dNow.getFullYear() + " "  + dNow.getHours() + ":" + dNow.getMinutes();
-//  return localdate;
-//  }

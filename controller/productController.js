@@ -14,11 +14,13 @@ exports.findAll = function(req, res) {
 exports.create = function(req, res) {
     const newProd = new Product(req.body);
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
-        res.status(400).send({ error: true, message: 'Please provide all required field' });
+        res.status(400).send({ error: true, message: 'Por favor, insira todo os valores necessários.' });
     } else {
         Product.create(newProd, function(err, product) {
             if (err)
                 res.send(err);
-        });
+         });
     }
+
+    res.redirect("/");
 };

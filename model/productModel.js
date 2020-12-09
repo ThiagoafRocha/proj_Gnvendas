@@ -12,10 +12,11 @@ Product.create = function(newProd, result) {
             console.log("error: ", err);
             result(err, null);
         } else {
-            console.log(res.insertId);
+            console.log("Produto criado!");
             result(null, res.insertId);
         }
     });
+
 }
 
 Product.findAll = function(result) {
